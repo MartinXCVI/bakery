@@ -1,0 +1,37 @@
+---
+---
+
+<section class="landing-section">
+  <h1 class="main-title">Our Bakery</h1>
+  <h2 class="main-subtitle">Bread, Cakes & Delicacies</h2>
+</section>
+
+<style>
+
+  .landing-section {
+    width: 100;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .landing-section::before {
+    content: '';
+    inset: 0;
+    position: absolute;
+    z-index: -10;
+    background-image: url('/images/croissants-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+  }
+
+  .main-title {
+    margin-bottom: 2rem;
+  }
+
+</style>
