@@ -1,0 +1,21 @@
+---
+interface Props {
+	src: string;
+	alt: string;
+}
+
+const { src, alt } = Astro.props
+---
+
+<div class="index-slide-card">
+  <img class="index-slide-img" src={src} alt={alt}>
+</div>
+
+<style>
+
+  .index-slide-img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+</style>

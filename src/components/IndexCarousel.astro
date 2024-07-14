@@ -1,4 +1,5 @@
 ---
+import IndexCarouselCard from "./IndexCarouselCard.astro"
 ---
 
 <section class="index-carousel-section">
@@ -11,8 +12,57 @@
       <a class="action-message-btn" href="">More About Us</a>
     </section>
   </section>
-  <section class="index-carousel-container">
-
+  <section id="index-carousel-container">
+    <div class="index-slider my-slider">
+      <IndexCarouselCard
+        src="/images/index-slider/is-1.jpg"
+        alt=""
+       />
+       <IndexCarouselCard
+       src="/images/index-slider/is-2.jpg"
+       alt=""
+      />
+      <IndexCarouselCard
+        src="/images/index-slider/is-3.jpg"
+        alt=""
+       />
+       <IndexCarouselCard
+        src="/images/index-slider/is-4.jpg"
+        alt=""
+       />
+       <IndexCarouselCard
+        src="/images/index-slider/is-5.jpg"
+        alt=""
+       />
+       <IndexCarouselCard
+        src="/images/index-slider/is-6.jpg"
+        alt=""
+       />
+       <IndexCarouselCard
+        src="/images/index-slider/is-7.jpg"
+        alt=""
+       />
+       <IndexCarouselCard
+        src="/images/index-slider/is-8.jpg"
+        alt=""
+       />
+       <IndexCarouselCard
+        src="/images/index-slider/is-9.jpg"
+        alt=""
+       />
+       <IndexCarouselCard
+        src="/images/index-slider/is-10.jpg"
+        alt=""
+       />
+       <IndexCarouselCard
+        src="/images/index-slider/is-11.jpg"
+        alt=""
+       />
+       <IndexCarouselCard
+        src="/images/index-slider/is-12.jpg"
+        alt=""
+       />
+    </div>
   </section>
 </section>
 
@@ -54,5 +104,20 @@
   padding: 1rem 2rem;
   background-color: pink;
 }
+
+#index-carousel-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.index-slider {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 </style>
