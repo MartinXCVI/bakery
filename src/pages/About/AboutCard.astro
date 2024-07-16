@@ -1,0 +1,30 @@
+---
+interface Props {
+	src: string;
+	alt: string;
+}
+
+const { src, alt } = Astro.props
+---
+
+<div class="about-slide-card">
+  <img class="about-slide-img" src={src} alt={alt}>
+</div>
+
+<style>
+
+  .about-slider-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #tns1 > .tns-item {
+    padding-right: 0rem !important;
+  }
+
+  .about-slide-img {
+    width: 100%;
+  }
+
+</style>
