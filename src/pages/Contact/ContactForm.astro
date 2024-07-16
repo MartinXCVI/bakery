@@ -1,0 +1,127 @@
+---
+---
+
+<section class="contact-form-section">
+  <form action="" id="contact-form">
+    <fieldset>
+      <legend><h3>Contact us</h3></legend>
+      <p>Leave us your query or message. We will contact you soon.</p>
+      <section class="contact-inputs-wrapper">
+        <section class="contact-sections">
+          <label for="name-input">Name</label>
+          <input type="text" name="name" id="name-input">
+        </section>
+        <section class="contact-sections">
+          <label for="email-input">Email</label>
+          <input type="email" name="email" id="email-input">
+        </section>
+        <section class="contact-sections">
+          <label for="city-input">City</label>
+          <input type="text" name="city" id="city-input">
+        </section>
+        <section class="contact-sections">
+          <label for="message-input">Message</label>
+          <textarea name="message" id="message-input" rows="10"></textarea>
+        </section>
+      </section>
+    </fieldset>
+    <section class="contact-btns-section">
+      <button class="contact-btn send-btn">Send</button>
+      <button class="contact-btn reset-btn">Reset</button>
+    </section>
+  </form>
+</section>
+
+<style>
+
+.contact-form-section {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0rem;
+}
+
+#contact-form {
+  min-width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact-form fieldset {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact-form fieldset legend {
+  margin-bottom: 3rem;
+}
+
+#contact-form fieldset p {
+  margin-bottom: 3rem;
+}
+
+#contact-form fieldset legend, #contact-form fieldset p {
+  text-align: center;
+}
+
+.contact-inputs-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-sections {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.contact-sections label, .contact-sections input, .contact-sections textarea {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.contact-sections input {
+  padding: 0.5rem;
+}
+
+.contact-sections textarea {
+  resize: none;
+  padding: 0.5rem;
+}
+
+.contact-btns-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contact-btn {
+  width: 40%;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.send-btn {
+  background-color: springgreen;
+}
+
+.reset-btn {
+  background-color: orangered;
+}
+
+</style>
