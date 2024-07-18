@@ -1,0 +1,20 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Header from "../components/Header.astro"
+import LandingProducts from './Products/LandingProducts.astro'
+import BreadSection from './Products/BreadSection.astro'
+import PastriesSection from "./Products/PastriesSection.astro"
+import CakesSection from "./Products/CakesSection.astro"
+import Footer from "../components/Footer.astro"
+---
+
+<Layout title="Bakery: Products">
+  <Header />
+  <main>
+    <LandingProducts />
+    <BreadSection />
+    <PastriesSection />
+    <CakesSection />
+  </main>
+  <Footer />
+</Layout>

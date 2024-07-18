@@ -1,0 +1,48 @@
+<section class="products-landing-wrapper">
+  <section class="products-landing-section">
+    <h2>Bread & Pastries</h2>
+    <p>The right balance between artisan tradition and scalable production</p>
+  </section>
+</section>
+
+<style>
+
+  .products-landing-wrapper {
+    width: 100%;
+    min-height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .products-landing-wrapper::before {
+    content: '';
+    inset: 0;
+    z-index: -1;
+    position: absolute;
+    background: #202020;
+  }
+
+  .products-landing-wrapper::after {
+    content: '';
+    inset: 0;
+    z-index: -1;
+    position: absolute;
+    background-image: url('/images/products-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+  }
+
+  .products-landing-section {
+    text-align: center;
+    color: white;
+  }
+
+  .products-landing-section h2 {
+    margin-bottom: 3rem;
+  }
+
+</style>
