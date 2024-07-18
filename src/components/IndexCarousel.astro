@@ -4,11 +4,11 @@ import IndexCarouselCard from "./IndexCarouselCard.astro"
 
 <section class="index-carousel-section">
   <section class="action-section">
-    <h2 class="action-subtitle">You Deserver</h2>
-    <h2 class="action-subtitle">The Best</h2>
-    <h2 class="action-subtitle">Of it All</h2>
+    <h2 class="action-subtitle">You</h2>
+    <h2 class="action-subtitle">Deserve</h2>
+    <h2 class="action-subtitle">The Best of it All</h2>
     <section class="action-message-section">
-      <p>Artisanal production with the best ingredients, effectiveness through simplicity, and most importantly, all of our love in what we do.</p>
+      <p>Artisanal production with the best ingredients, effectiveness through simplicity, and most importantly, all of our love in what we do for our beloved people.</p>
       <a class="action-message-btn" href="">More About Us</a>
     </section>
   </section>
@@ -76,15 +76,19 @@ import IndexCarouselCard from "./IndexCarouselCard.astro"
 }
 
 .action-section {
+  width: 75%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #252525;
 }
 
 .action-subtitle {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
 }
 
 .action-message-section {
@@ -92,17 +96,26 @@ import IndexCarouselCard from "./IndexCarouselCard.astro"
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 1rem;
 }
 
 .action-message-section p {
   width: 75%;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   text-align: center;
+  line-height: 2rem;
 }
 
 .action-message-btn {
   padding: 1rem 2rem;
-  background-color: pink;
+  background-color: #ff90aa;
+  color: #f6f6f6;
+  border-radius: 0.25rem;
+  transition: 0.2s linear all;
+}
+
+.action-message-btn:hover {
+  background-color: #ff7070;
 }
 
 #index-carousel-container {

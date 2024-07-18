@@ -16,9 +16,18 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    color: #f6f6f6;
   }
 
   .landing-section::before {
+    content: '';
+    inset: 0;
+    position: absolute;
+    z-index: -15;
+    background: #252525;
+  }
+
+  .landing-section::after {
     content: '';
     inset: 0;
     position: absolute;
@@ -27,11 +36,22 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   .main-title {
     margin-bottom: 2rem;
+    font-size: 5rem;
+    font-family: 'Dancing Script', cursive;
+  }
+
+  .main-subtitle {
+    font-size: 3rem;
+    font-weight: 400;
+  }
+
+  .main-title, .main-subtitle {
+    text-shadow: 0rem 0rem 0.5rem #252525;
   }
 
 </style>
