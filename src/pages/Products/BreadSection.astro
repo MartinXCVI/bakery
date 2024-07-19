@@ -1,18 +1,17 @@
 ---
-
 ---
 
 <section class="bread-section-wrapper" id="bread-section">
   <article class="bread-article-intro">
-    <p>Classic bakery</p>
-    <h2>Traditional recipes made by expert bakers</h2>
-    <p>
+    <p class="bread-intro">Classic bakery</p>
+    <h2 class="bread-subtitle">Traditional recipes made by expert bakers</h2>
+    <p class="bread-text">
       Our artisans mix the perfect amount of ingredients and bake the bread
       using the ideal oven temperature, always obtaining a crispy, tender
       product with a unique flavour.
     </p>
-    <p>
-      Their dedication ensures every loaf maintains consistency, freshness, and
+    <p class="bread-text">
+      Their dedication ensures every loaf maintains consistency, freshness, and an uniquely
       irresistible aroma.
     </p>
   </article>
@@ -58,6 +57,19 @@
     text-align: center;
   }
 
+
+  .bread-subtitle {
+    font-size: 3rem;
+    font-weight: 200;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+  }
+
+  .bread-text, .bread-intro {
+    color: #252525;
+    font-size: 0.9rem;
+  }
+
   .bread-article-gallery {
     width: 100%;
     display: flex;
@@ -77,6 +89,7 @@
     width: 100%;
     aspect-ratio: 3 / 2;
     object-fit: cover;
+    opacity: 0.9;
   }
 
 </style>

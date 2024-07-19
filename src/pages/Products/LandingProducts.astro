@@ -1,7 +1,7 @@
 <section class="products-landing-wrapper">
   <section class="products-landing-section">
-    <h2>Bread & Pastries</h2>
-    <p>The right balance between artisan tradition and scalable production</p>
+    <h2 class="products-title">Bread & Pastries</h2>
+    <p class="products-subtitle">The right balance between artisan tradition and scalable production</p>
   </section>
 </section>
 
@@ -33,7 +33,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.6;
+    opacity: 0.5;
   }
 
   .products-landing-section {
@@ -41,8 +41,19 @@
     color: white;
   }
 
-  .products-landing-section h2 {
-    margin-bottom: 3rem;
+  .products-title {
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 0.35rem;
+    margin-bottom: 2rem;
+  }
+
+  .products-subtitle {
+    font-size: 1.25rem;
+  }
+
+  .products-title, .products-subtitle {
+    text-shadow: 0rem 0rem 1rem #202020;
   }
 
 </style>

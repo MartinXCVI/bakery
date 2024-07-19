@@ -5,29 +5,29 @@
   <form action="" id="contact-form">
     <fieldset>
       <legend><h3>Contact us</h3></legend>
-      <p>Leave us your query or message. We will contact you soon.</p>
+      <p class="form-text">Leave us your query or message. We will contact you soon.</p>
       <section class="contact-inputs-wrapper">
         <section class="contact-sections">
-          <label for="name-input">Name</label>
-          <input type="text" name="name" id="name-input">
+          <label for="name-input"><i class="fa-regular fa-user"></i> Name</label>
+          <input type="text" name="name" id="name-input" placeholder="Your name">
         </section>
         <section class="contact-sections">
-          <label for="email-input">Email</label>
-          <input type="email" name="email" id="email-input">
+          <label for="email-input"><i class="fa-regular fa-envelope"></i> Email</label>
+          <input type="email" name="email" id="email-input" placeholder="Your email">
         </section>
         <section class="contact-sections">
-          <label for="city-input">City</label>
-          <input type="text" name="city" id="city-input">
+          <label for="city-input"><i class="fa-regular fa-building"></i> City</label>
+          <input type="text" name="city" id="city-input" placeholder="Your city">
         </section>
         <section class="contact-sections">
-          <label for="message-input">Message</label>
-          <textarea name="message" id="message-input" rows="10"></textarea>
+          <label for="message-input"><i class="fa-regular fa-message"></i> Message</label>
+          <textarea name="message" id="message-input" rows="10" placeholder="Your message"></textarea>
         </section>
       </section>
     </fieldset>
     <section class="contact-btns-section">
-      <button class="contact-btn send-btn">Send</button>
-      <button class="contact-btn reset-btn">Reset</button>
+      <button type="submit" class="contact-btn send-btn">Send</button>
+      <button type="reset" class="contact-btn reset-btn">Reset</button>
     </section>
   </form>
 </section>
@@ -40,7 +40,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3rem 0rem;
+  padding: 4rem 0rem 1rem;
 }
 
 #contact-form {
@@ -60,11 +60,19 @@
 }
 
 #contact-form fieldset legend {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
-#contact-form fieldset p {
-  margin-bottom: 3rem;
+#contact-form fieldset legend h3 {
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.form-text {
+  color: #252525;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
 }
 
 #contact-form fieldset legend, #contact-form fieldset p {
@@ -85,21 +93,43 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-sections label {
+  color: #252525;
+  font-size: 0.9rem;
+  padding-left: 4px;
 }
 
 .contact-sections label, .contact-sections input, .contact-sections textarea {
   width: 100%;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 .contact-sections input {
-  padding: 0.5rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  border: 1px solid lightgray;
+  background-color: #f6f6f6;
+  color: #252525;
+}
+
+.contact-sections input:focus {
+  border-color: gray;
 }
 
 .contact-sections textarea {
   resize: none;
   padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid lightgray;
+  background-color: #f6f6f6;
+  color: #252525;
+}
+
+.contact-sections textarea:focus {
+  border-color: gray;
 }
 
 .contact-btns-section {
@@ -111,17 +141,29 @@
 
 .contact-btn {
   width: 40%;
-  padding: 1rem;
+  padding: 0.75rem;
   border-radius: 0.25rem;
   cursor: pointer;
+  color: #f6f6f6;
+  text-shadow: 0rem 0rem 0.5rem #252525;
+  font-size: 1rem;
+  transition: 0.2s linear all;
 }
 
 .send-btn {
-  background-color: springgreen;
+  background-color: #ff7070;
+}
+
+.send-btn:hover {
+  background-color: crimson;
 }
 
 .reset-btn {
-  background-color: orangered;
+  background-color: slategray;
+}
+
+.reset-btn:hover {
+  background-color: darkslategray;
 }
 
 </style>

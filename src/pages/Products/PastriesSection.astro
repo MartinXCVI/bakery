@@ -4,14 +4,14 @@
 
 <section class="pastries-section-wrapper" id="pastries-section">
   <article class="pastries-article-intro">
-    <p>Pastries & Delicacies</p>
-    <h2>The best pastries, with all of our love</h2>
-    <p>
+    <p class="pastries-intro">Pastries & Delicacies</p>
+    <h2 class="pastries-subtitle">The best pastries, with all of our love</h2>
+    <p class="pastries-text">
       Our bakers blend the right ingredients and bake the pastries at the
       optimal temperature, consistently achieving a flaky, delicate treat with a
       distinctive taste.
     </p>
-    <p>
+    <p class="pastries-text">
       Their commitment guarantees every batch remains uniform, fresh, and
       enticingly fragrant.
     </p>
@@ -46,6 +46,18 @@
     text-align: center;
   }
 
+  .pastries-subtitle {
+    font-size: 3rem;
+    font-weight: 200;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+  }
+
+  .pastries-text, .pastries-intro {
+    color: #252525;
+    font-size: 0.9rem;
+  }
+
   .pastries-article-gallery {
     width: 100%;
     display: flex;
@@ -65,6 +77,7 @@
     width: 100%;
     aspect-ratio: 3 / 2;
     object-fit: cover;
+    opacity: 0.9;
   }
 
 </style>
