@@ -1,4 +1,5 @@
 ---
+
 ---
 
 <section class="contact-info-section">
@@ -32,7 +33,6 @@
 </section>
 
 <style>
-
   .contact-info-section {
     width: 100%;
     display: flex;
@@ -56,7 +56,10 @@
 
   .contact-info a {
     text-decoration: none;
-    color: #000000;
+  }
+
+  .contact-info a, .contact-info p {
+    color: #252525;
   }
 
   .contact-info a:hover {
@@ -83,12 +86,49 @@
   }
 
   .fa-icon::after {
-    content: '';
+    content: "";
     inset: 0;
     position: absolute;
     background: #ff90aa;
     border-radius: 3rem;
     z-index: -1;
+  }
+
+  /*---------- to 479px ----------*/
+
+  @media all and (max-width: 479px) {
+    .contact-item {
+      width: 65%;
+    }
+  }
+
+  /*---------- 480px to 767px ----------*/
+
+  @media all and (min-width: 480px) and (max-width: 767px) {
+    .contact-item {
+      width: 50%;
+    }
+  }
+
+  /*---------- 480px to 767px ----------*/
+
+  @media all and (min-width: 768px) and (max-width: 959px) {
+    .contact-item {
+      width: 35%;
+    }
+  }
+
+  /*---------- to 959px ----------*/
+
+  @media all and (max-width: 959px) {
+    .contact-info-section {
+      flex-direction: column;
+    }
+
+    .contact-item {
+      justify-content: left;
+      margin-bottom: 1.5rem;
+    }
   }
 
 </style>
