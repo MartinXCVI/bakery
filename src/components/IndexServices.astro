@@ -53,7 +53,8 @@
   }
 
   .services-section-div h3 {
-    font-size: 1.75rem;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
     font-weight: 400;
     letter-spacing: 0.25rem;
   }
@@ -86,5 +87,65 @@
     background-color: #f6f6f6;
     color: #252525;
   }
+
+  /*---------- to 479px -----------*/
+
+  @media all and (max-width: 479px) {
+
+    .services-section {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+
+    .services-section-div {
+      width: 100%;
+    }
+
+    .services-section-div p {
+      line-height: 2.5rem;
+    }
+
+  }
+
+  /*---------- 480px to 767px -----------*/
+
+  @media all and (min-width: 480px) and (max-width: 767px) {
+
+    .services-section-div {
+      width: 65%;
+    }
+
+    .services-section-div p {
+      line-height: 2rem;
+    }
+
+    .index-services-btn {
+      width: 75%;
+    }
+
+  }
+
+  /*---------- to 767px -----------*/
+
+  @media all and (max-width: 767px) {
+
+    .services-section-div {
+      padding-left: 2rem;
+    }
+
+  }
+
+  /*---------- 768px to 959px -----------*/
+
+  @media all and (min-width: 768px) and (max-width: 959px) {
+
+  .services-section-div {
+    width: 50%;
+  }
+
+  .services-section-div p {
+    line-height: 2rem;
+  }
+}
 
 </style>

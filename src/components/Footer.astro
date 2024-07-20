@@ -185,4 +185,78 @@
     color: crimson;
   }
 
+/*----------- to 479px -----------*/
+
+@media all and (max-width: 479px) {
+
+  .footer-contact-section {
+    width: 50%;
+  }
+
+}
+
+/*----------- 480px to 767px ----------*/
+
+@media all and (min-width: 480px) and (max-width: 767px) {
+
+  .footer {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-contact-section {
+    width: 40%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-contact-card {
+    padding-left: 1rem;
+  }
+
+}
+
+@media all and (max-width: 767px) {
+
+  .footer {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-contact-section {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+  }
+
+  .footer-contact-card {
+    font-size: 0.8rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .footer-social-icons {
+    width: 50%;
+  }
+
+}
+
+/*----------- 768px to 1024px ----------*/
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  
+  .footer-contact-section {
+    flex-wrap: wrap;
+    padding-inline: 1rem;
+    margin-bottom: 4rem;
+  }
+
+  .footer-contact-card {
+    min-width: 35%;
+    font-size: 0.8rem;
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+  }
+
+}
+
 </style>
