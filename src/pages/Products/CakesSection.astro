@@ -65,7 +65,8 @@
     text-transform: uppercase;
   }
 
-  .cakes-text, .cakes-intro {
+  .cakes-text,
+  .cakes-intro {
     color: #252525;
     font-size: 0.9rem;
   }
@@ -91,4 +92,68 @@
     object-fit: cover;
     opacity: 0.9;
   }
+
+  /*---------- to 479px ----------*/
+
+  @media all and (max-width: 479px) {
+    .cakes-article-intro {
+      width: 80%;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+
+    .cakes-subtitle {
+      font-size: 2rem;
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+    }
+
+    .cakes-text {
+      margin-bottom: 0.75rem;
+    }
+  }
+
+  /*---------- to 959px ----------*/
+
+  @media all and (min-width: 480px) and (max-width: 959px) {
+    .cakes-article-intro {
+      width: 70%;
+      min-height: 60vh;
+      justify-content: center;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+
+    .cakes-subtitle {
+      font-size: 2.25rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    .cakes-text {
+      margin-bottom: 0.75rem;
+    }
+  }
+
+  @media all and (max-width: 959px) {
+    .cakes-article-gallery {
+      flex-direction: column;
+      margin-bottom: 2rem;
+    }
+
+    .cakes-gallery-fig {
+      width: 95%;
+    }
+
+    .cakes-gallery-fig:nth-child(1) img {
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+    }
+
+    .cakes-gallery-fig:last-child img {
+      border-bottom-left-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
+    }
+  }
+  
 </style>
