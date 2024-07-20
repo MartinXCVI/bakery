@@ -96,12 +96,75 @@
     font-weight: 400;
     letter-spacing: 0.25rem;
     margin-bottom: 2rem;
+    color: #252525;
   }
 
   .about-article p {
     margin-bottom: 1.5rem;
     line-height: 1.5rem;
     color: #252525;
+  }
+
+
+  /*---------- to 479px ----------*/
+
+  @media all and (max-width: 479px) {
+      
+    .about-section-figure {
+      min-width: 85%;
+      margin-bottom: 1rem;
+    }
+
+    .about-article {
+      width: 90%;
+      padding: 0.5rem;
+    }
+
+    .about-article p {
+      margin-bottom: 1.25rem;
+    }
+
+  }
+
+    /*---------- 480px to 767px ----------*/
+
+  @media all and (min-width: 480px) and (max-width: 767px) {
+
+    .about-section-figure {
+      min-width: 65%;
+    }
+
+  }
+  
+  /*---------- to 959px ----------*/
+
+  @media all and (min-width: 768px) and (max-width: 959px) {
+    .about-section-figure {
+      min-width: 70%;
+    }
+  }
+
+
+  /*---------- to 959px ----------*/
+
+  @media all and (max-width: 959px) {
+
+    .about-section {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 3rem;
+    }
+
+    .about-section-figure img {
+      border-radius: 0.5rem;
+    }
+
+    .about-article h2 {
+      text-align: center;
+      font-weight: 500;
+    }
+
   }
 
 </style>
