@@ -1,0 +1,136 @@
+---
+---
+
+<section class="error-wrapper">
+  <div class="error-title-div">
+    <h1 class="error-title">Oops!</h1>
+    <figure class="error-fig">
+      <img src="/icons/broken-egg.png" alt="">
+    </figure>
+  </div>
+  
+  <p class="error-text">Something went wrong...</p>
+  <p class="error-text">Or the resource that you are looking for does not exist.</p>
+  <p class="error-link"><a href="/">Get back to the site</a></p>
+</section>
+
+<style>
+
+  .error-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .error-wrapper::before {
+    content: '';
+    inset: 0;
+    position: absolute;
+    z-index: -5;
+    background: #050505;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+  }
+
+  .error-wrapper::after {
+    content: '';
+    inset: 0;
+    position: absolute;
+    z-index: -1;
+    background-image: url('/images/404-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+  }
+
+  .error-title-div {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .error-title {
+    font-size: 4.5rem;
+    font-weight: 400;
+    text-align: center;
+    padding-right: 0.5rem;
+  }
+
+  .error-fig {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .error-fig img {
+    width: 100%;
+  }
+
+  .error-text {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .error-link {
+    font-size: 1.15rem;
+    padding: 1rem;
+    background-color: #ff7070;
+    border-radius: 0.5rem;
+    transition: 0.2s linear;
+    margin-top: 1.5rem;
+  }
+
+  .error-link:hover {
+    background-color: crimson;
+  }
+
+  .error-title, .error-text {
+    color: #f6f6f6;
+    text-shadow: 0rem 0rem 0.25rem #252525;
+  }
+
+  .error-link a {
+    color: #f6f6f6;
+  }
+
+  /*----------  ----------*/
+
+  @media all and (max-width: 575px) {
+
+
+    .error-title-div {
+      flex-direction: column;
+    }
+
+    .error-fig {
+      width: 75%;
+    }
+
+    .error-title {
+      font-size: 3rem;
+    }
+
+    .error-text {
+      font-size: 1rem;
+      padding-inline: 0.5rem;
+    }
+
+    .error-link {
+      font-size: 1rem;
+      padding: 0.75rem;
+    }
+
+  }
+
+</style>
