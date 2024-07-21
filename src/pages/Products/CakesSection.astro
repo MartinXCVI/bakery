@@ -5,6 +5,9 @@
 <section class="cakes-section-wrapper" id="cakes-section">
   <article class="cakes-article-intro">
     <p class="cakes-intro">Cakes & Pies</p>
+    <figure class="product-fig">
+      <img src="/icons/product-cakes.png" alt="" />
+    </figure>
     <h2 class="cakes-subtitle">Outstanding artistry of sweetness</h2>
     <p class="cakes-text">
       Our artisan bakery stands out in the preparation, baking and decoration of
@@ -71,6 +74,17 @@
     font-size: 0.9rem;
   }
 
+  .product-fig {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .product-fig img {
+    width: 100%;
+  }
+
   .cakes-article-gallery {
     width: 100%;
     display: flex;
@@ -91,6 +105,14 @@
     aspect-ratio: 3 / 2;
     object-fit: cover;
     opacity: 0.9;
+    transition: 0.2s linear all;
+  }
+
+  .cakes-gallery-fig img:hover {
+    transform: scale(1.2);
+    z-index: 5;
+    border-radius: 0.5rem;
+    opacity: 1;
   }
 
   /*---------- to 479px ----------*/
@@ -136,6 +158,14 @@
   }
 
   @media all and (max-width: 959px) {
+    .cakes-intro {
+      margin-bottom: 1rem;
+    }
+
+    .product-fig {
+      width: 20%;
+    }
+
     .cakes-article-gallery {
       flex-direction: column;
       margin-bottom: 2rem;
@@ -155,5 +185,13 @@
       border-bottom-right-radius: 0.5rem;
     }
   }
-  
+
+  /*---------- from 960px ----------*/
+
+  @media all and (min-width: 960px) {
+    .cakes-article-intro {
+      margin-bottom: 1.25rem;
+    }
+  }
+
 </style>

@@ -5,6 +5,9 @@
 <section class="pastries-section-wrapper" id="pastries-section">
   <article class="pastries-article-intro">
     <p class="pastries-intro">Pastries & Delicacies</p>
+    <figure class="product-fig">
+      <img src="/icons/product-pastries.png" alt="" />
+    </figure>
     <h2 class="pastries-subtitle">The best pastries, with all of our love</h2>
     <p class="pastries-text">
       Our bakers blend the right ingredients and bake the pastries at the
@@ -71,6 +74,17 @@
     font-size: 0.9rem;
   }
 
+  .product-fig {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .product-fig img {
+    width: 100%;
+  }
+
   .pastries-article-gallery {
     width: 100%;
     display: flex;
@@ -91,6 +105,14 @@
     aspect-ratio: 3 / 2;
     object-fit: cover;
     opacity: 0.9;
+    transition: 0.2s linear all;
+  }
+
+  .pastries-gallery-fig img:hover {
+    transform: scale(1.2);
+    z-index: 5;
+    border-radius: 0.5rem;
+    opacity: 1;
   }
 
   /*---------- to 479px ----------*/
@@ -136,6 +158,14 @@
   }
 
   @media all and (max-width: 959px) {
+    .pastries-intro {
+      margin-bottom: 1rem;
+    }
+
+    .product-fig {
+      width: 20%;
+    }
+
     .pastries-article-gallery {
       flex-direction: column;
       margin-bottom: 2rem;
@@ -153,6 +183,14 @@
     .pastries-gallery-fig:last-child img {
       border-bottom-left-radius: 0.5rem;
       border-bottom-right-radius: 0.5rem;
+    }
+  }
+
+  /*---------- from 960px ----------*/
+
+  @media all and (min-width: 960px) {
+    .pastries-article-intro {
+      margin-bottom: 1.25rem;
     }
   }
 </style>

@@ -3,7 +3,10 @@
 
 <section class="bread-section-wrapper" id="bread-section">
   <article class="bread-article-intro">
-    <p class="bread-intro">Classic bakery</p>
+    <p class="bread-intro">Classic Bakery</p>
+    <figure class="product-fig">
+      <img src="/icons/product-bread.png" alt="">
+    </figure>
     <h2 class="bread-subtitle">Traditional recipes made by expert bakers</h2>
     <p class="bread-text">
       Our artisans mix the perfect amount of ingredients and bake the bread
@@ -70,6 +73,17 @@
     font-size: 0.9rem;
   }
 
+  .product-fig {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .product-fig img {
+    width: 100%;
+  }
+
   .bread-article-gallery {
     width: 100%;
     display: flex;
@@ -90,6 +104,14 @@
     aspect-ratio: 3 / 2;
     object-fit: cover;
     opacity: 0.9;
+    transition: 0.2s linear all;
+  }
+
+  .bread-gallery-fig img:hover {
+    transform: scale(1.2);
+    z-index: 5;
+    border-radius: 0.5rem;
+    opacity: 1;
   }
 
   /*---------- to 479px ----------*/
@@ -140,6 +162,14 @@
 
   @media all and (max-width: 959px) {
 
+    .bread-intro {
+      margin-bottom: 1rem;
+    }
+
+    .product-fig {
+      width: 20%;
+    }
+
     .bread-article-gallery {
       flex-direction: column;
       margin-bottom: 2rem;
@@ -157,6 +187,16 @@
     .bread-gallery-fig:last-child img {
       border-bottom-left-radius: 0.5rem;
       border-bottom-right-radius: 0.5rem;
+    }
+
+  }
+
+  /*---------- from 960px ----------*/
+
+  @media all and (min-width: 960px) {
+    
+    .bread-article-intro {
+      margin-bottom: 1.25rem;
     }
 
   }
