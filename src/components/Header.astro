@@ -5,88 +5,134 @@
 <header class="header">
   <figure class="logo-fig">
     <a href="/">
-      <img class="logo-img" src="/images/bakery-logo.png" alt="bakery logo">
+      <img class="logo-img" src="/images/bakery-logo.png" alt="bakery logo" />
     </a>
   </figure>
   <nav class="navbar">
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/About">About</a></li>
-      <li><a href="/Products">Products</a></li>
-      <li><a href="/Contact" target="_blank">Contact</a></li>
+    <ul class="nav-menu hide-menu">
+      <li class="nav-link"><a href="/">Home</a></li>
+      <li class="nav-link"><a href="/About">About</a></li>
+      <li class="nav-link"><a href="/Products">Products</a></li>
+      <li class="nav-link"><a href="/Contact" target="_blank">Contact</a></li>
     </ul>
+    <div class="ham-menu">
+      <span class="ham-bar"></span>
+      <span class="ham-bar"></span>
+      <span class="ham-bar"></span>
+    </div>
   </nav>
 </header>
 
 <style>
-
-.header {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #252525;
-  color: #f6f6f6;
-  padding: 0.5rem 1.5rem;
-}
-
-.navbar {
-  width: 40%;
-}
-
-.navbar ul {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-}
-
-.navbar ul li a {
-  color: #f6f6f6;
-  transition: 0.15s linear all;
-}
-
-.navbar ul li a:hover {
-  color: #ff7070;
-}
-
-.logo-fig {
-  width: 5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #151515;
-}
-
-.logo-fig a {
-  width: 100%;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.logo-img {
-  width: 100%;
-}
-
-/*----------- to 959px ----------*/
-
-@media all and (max-width: 959px) {
-
   .header {
-    flex-direction: column;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #252525;
+    color: #f6f6f6;
+    padding: 0.5rem 1.5rem;
   }
 
-  .logo-fig {
-    width: 25%;
+  .navbar {
+    width: 40%;
   }
 
   .navbar ul {
-    flex-direction: column;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
   }
-}
 
+  .navbar ul li a {
+    color: #f6f6f6;
+    text-transform: uppercase;
+    transition: 0.15s linear all;
+    font-size: 0.9rem;
+    letter-spacing: 0.20rem;
+  }
+
+  .navbar ul li a:hover {
+    color: #ff7070;
+  }
+
+  .logo-fig {
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #151515;
+  }
+
+  .logo-fig a {
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo-img {
+    width: 100%;
+  }
+
+  /*----------- to 959px ----------*/
+
+  @media all and (max-width: 959px) {
+    .header {
+      flex-direction: column;
+    }
+
+    .logo-fig {
+      width: 35%;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .navbar .nav-menu {
+      flex-direction: column;
+    }
+
+    .ham-bar {
+      display: block !important;
+      width: 3rem;
+      height: 4px;
+      margin: 5px auto;
+      transition: 0.4s linear all;
+      background-color: #f6f6f6;
+      border-radius: 2rem;
+    }
+
+    .hide-menu {
+      height: 0;
+      overflow: hidden;
+      transition: all 0.4s ease-in-out !important;
+    }
+
+    .display-menu {
+      height: 10rem !important;
+      transition: all 0.4s ease-in-out !important;
+      padding-bottom: 0.75rem;
+    }
+
+    .ham-menu {
+      cursor: pointer;
+      padding-bottom: 0.5rem;
+    }
+
+    .ham-menu.active .ham-bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    .ham-menu.active .ham-bar:nth-child(1) {
+      transform: translateY(8px) rotate(135deg);
+    }
+
+    .ham-menu.active .ham-bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-135deg);
+    }
+  }
 </style>
