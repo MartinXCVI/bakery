@@ -1,0 +1,121 @@
+---
+interface Props {
+  src: string;
+  title: string;
+  text: string;
+}
+
+const { src, title, text } = Astro.props
+---
+
+<div class="wholesale-card">
+  <figure class="wholesale-fig">
+    <img src={src} alt={title}>
+  </figure>
+  <h3 class="wholesale-product-name">{title}</h3>
+  <p class="wholesale-product-text">{text}</p>
+</div>
+
+<style>
+
+  .wholesale-card {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
+    transition: 0.2s linear all;
+  }
+
+  .wholesale-card:hover {
+    background-color: #e9e9e9;
+  }
+
+  .wholesale-fig {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .wholesale-fig img {
+    width: 100%;
+    border-radius: 0.35rem;
+    opacity: 0.9;
+    transition: 0.2s linear all;
+  }
+
+  .wholesale-fig img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  .wholesale-product-name {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+  }
+
+  .wholesale-product-text {
+    width: 90%;
+    font-size: 0.8rem;
+    color: #454545;
+  }
+
+  /*--------- to 479px ----------*/
+
+  @media all and (max-width: 479px) {
+
+    .wholesale-card {
+      width: 100%;
+    }
+
+  }
+
+  /*--------- 479px to 767px ----------*/
+
+  @media all and (min-width: 480px) and (max-width: 575px) {
+
+    .wholesale-card {
+      width: 90%;
+    }
+
+  }
+
+  /*--------- 576px to 767px ----------*/
+
+  @media all and (min-width: 576px) and (max-width: 767px) {
+
+    .wholesale-card {
+      width: 90%;
+      padding: 1.25rem;
+    }
+
+    .wholesale-fig {
+      margin-bottom: 1.25rem;
+    }
+
+  }
+
+  /*--------- 768px to 959px ----------*/
+
+  @media all and (min-width: 768px) and (max-width: 959px) {
+
+    .wholesale-card {
+      width: 45%;
+      padding: 1.25rem;
+    }
+
+    .wholesale-fig {
+      margin-bottom: 1.5rem;
+    }
+
+  }
+
+</style>

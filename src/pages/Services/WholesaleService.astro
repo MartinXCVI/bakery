@@ -1,9 +1,10 @@
 ---
+import WholesaleCard from "./WholesaleCard.astro"
 ---
 
 <section class="lunch-section-wrapper" id="lunch-section">
   <article class="lunch-article-intro">
-    <p class="lunch-intro">Lunch Service</p>
+    <p class="lunch-intro">Whole Service</p>
     <figure class="product-fig">
       <img src="/icons/wholesale-icon.png" alt="">
     </figure>
@@ -15,6 +16,48 @@
       Because we care as much about quality and attention to detail as you do, we can make a great team! We also develop custom products. Ask us.
     </p>
     <a class="services-btn" href="/Contact">Ask for a quote</a>
+  </article>
+  <article class="wholesale-article">
+    <WholesaleCard 
+      src="/images/wholesale/arab-bread.jpg"
+      title="Arab bread"
+      text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus."
+    />
+    <WholesaleCard 
+      src="/images/wholesale/buttermilk-biscuits.jpg"
+      title="Buttermilk Biscuits"
+      text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus."
+    />
+    <WholesaleCard 
+      src="/images/wholesale/challah-bread.jpg"
+      title="Challah Bread"
+      text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus."
+    />
+    <WholesaleCard 
+      src="/images/wholesale/croissants.jpg"
+      title="Croissants"
+      text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus."
+    />
+    <WholesaleCard 
+      src="/images/wholesale/french-bread.jpg"
+      title="French bread"
+      text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus."
+    />
+    <WholesaleCard 
+      src="/images/wholesale/sandwich-bread.jpg"
+      title="Sandwich Bread"
+      text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus."
+    />
+    <WholesaleCard 
+      src="/images/wholesale/tortilla-bread.jpg"
+      title="Tortilla Bread"
+      text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus."
+    />
+    <WholesaleCard 
+      src="/images/wholesale/varied-cookies.jpg"
+      title="Varied Cookies"
+      text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus."
+    />
   </article>
 </section>
 
@@ -76,6 +119,18 @@
 
   .services-btn:hover {
     background-color: #ff7070;
+  }
+
+  .wholesale-article {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center
+  }
+
+  .wholesale-article .wholesale-card {
+    width: 20%;
   }
 
   /*---------- to 479px ----------*/
