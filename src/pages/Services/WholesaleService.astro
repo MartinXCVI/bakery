@@ -1,0 +1,149 @@
+---
+---
+
+<section class="lunch-section-wrapper" id="lunch-section">
+  <article class="lunch-article-intro">
+    <p class="lunch-intro">Lunch Service</p>
+    <figure class="product-fig">
+      <img src="/icons/wholesale-icon.png" alt="">
+    </figure>
+    <h2 class="lunch-subtitle">Fresh Wholesale Bread with Quality at Bulk Prices</h2>
+    <p class="lunch-text">
+      We've developed a unique wholesale baking model, blending our family's artisanal baking tradition with medium to large-scale production and distribution.
+    </p>
+    <p class="lunch-text">
+      Because we care as much about quality and attention to detail as you do, we can make a great team! We also develop custom products. Ask us.
+    </p>
+    <a class="services-btn" href="/Contact">Ask for a quote</a>
+  </article>
+</section>
+
+<style>
+
+  .lunch-section-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .lunch-article-intro {
+    width: 50%;
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+  }
+
+  .lunch-subtitle {
+    font-size: 3rem;
+    font-weight: 200;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+  }
+
+  .lunch-text, .lunch-intro {
+    color: #252525;
+    font-size: 0.9rem;
+  }
+
+  .product-fig {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .product-fig img {
+    width: 100%;
+  }
+
+  .services-btn {
+    padding: 0.75rem 2rem;
+    background-color: #ff90aa;
+    color: #f6f6f6;
+    border-radius: 0.25rem;
+    transition: 0.2s linear all;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .services-btn:hover {
+    background-color: #ff7070;
+  }
+
+  /*---------- to 479px ----------*/
+
+  @media all and (max-width: 479px) {
+
+    .lunch-article-intro {
+      width: 80%;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+
+    .lunch-subtitle {
+      font-size: 2rem;
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+    }
+
+    .lunch-text {
+      margin-bottom: 0.75rem;
+    }
+
+  }
+
+    /*---------- to 959px ----------*/
+
+  @media all and (min-width: 480px) and (max-width: 959px) {
+      
+    .lunch-article-intro {
+      width: 70%;
+      min-height: 60vh;
+      justify-content: center;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+
+    .lunch-subtitle {
+      font-size: 2.25rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    .lunch-text {
+      margin-bottom: 0.75rem;
+    }
+
+  }
+
+  @media all and (max-width: 959px) {
+
+    .lunch-intro {
+      margin-bottom: 1rem;
+    }
+
+    .product-fig {
+      width: 20%;
+    }
+
+  }
+
+  /*---------- from 960px ----------*/
+
+  @media all and (min-width: 960px) {
+    
+    .lunch-article-intro {
+      margin-bottom: 1.25rem;
+    }
+
+  }
+
+</style>

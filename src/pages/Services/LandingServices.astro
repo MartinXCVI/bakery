@@ -1,0 +1,87 @@
+<section class="services-landing-wrapper">
+  <section class="services-landing-section">
+    <h2 class="services-title">Services</h2>
+    <p class="services-subtitle">Commitment, quality & neatness</p>
+  </section>
+</section>
+
+<style>
+
+  .services-landing-wrapper {
+    width: 100%;
+    min-height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .services-landing-wrapper::before {
+    content: '';
+    inset: 0;
+    z-index: -1;
+    position: absolute;
+    background: #202020;
+  }
+
+  .services-landing-wrapper::after {
+    content: '';
+    inset: 0;
+    z-index: -1;
+    position: absolute;
+    background-image: url('/images/services-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+  }
+
+  .services-landing-section {
+    text-align: center;
+    color: white;
+  }
+
+  .services-title {
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 0.35rem;
+    margin-bottom: 2rem;
+  }
+
+  .services-subtitle {
+    font-size: 1.25rem;
+  }
+
+  .services-title, .services-subtitle {
+    text-shadow: 0rem 0rem 1rem #202020;
+  }
+
+  /*---------- to 479px ----------*/
+
+  @media all and (max-width: 479px) {
+
+    .services-title {
+      font-size: 2.5rem;
+    }
+
+    .services-subtitle {
+      font-size: 1rem;
+    }
+
+  }
+
+  /*---------- 480 to 959px ----------*/
+
+  @media all and (min-width: 480px) and (max-width: 959px) {
+
+    .services-title {
+      font-size: 2.25rem;
+    }
+
+    .services-subtitle {
+      font-size: 1rem;
+    }
+
+  }
+
+</style>
