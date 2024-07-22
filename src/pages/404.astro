@@ -1,8 +1,10 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import SimpleLayout from "../layouts/SimpleLayout.astro";
+import Header from "../components/Header.astro";
 import Error from "./404/Error.astro";
 ---
 
-<Layout title="Bakery:404 Not Found">
+<SimpleLayout title="Bakery:404 Not Found">
+  <Header />
   <Error />
-</Layout>
+</SimpleLayout>

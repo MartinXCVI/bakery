@@ -1,13 +1,13 @@
 ---
 import Header from "../components/Header.astro"
-import Layout from "../layouts/Layout.astro"
+import SimpleLayout from "../layouts/SimpleLayout.astro"
 import LandingServices from "./Services/LandingServices.astro"
 import LunchService from "./Services/LunchService.astro"
 import Wholesale from "./Services/WholesaleService.astro"
 import Footer from "../components/Footer.astro"
 ---
 
-<Layout title="Bakery: Services">
+<SimpleLayout title="Bakery: Services">
   <Header />
   <main>
     <LandingServices />
@@ -15,4 +15,4 @@ import Footer from "../components/Footer.astro"
     <Wholesale />
   </main>
   <Footer />
-</Layout>
+</SimpleLayout>
