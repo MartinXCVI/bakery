@@ -4,7 +4,7 @@ var aboutSlider = tns({
   container: '.about-slider',
   items: 12,
   slideBy: 1,
-  speed: 400,
+  speed: 300,
   autoplay: true,
   nav: false,
   controls: false,

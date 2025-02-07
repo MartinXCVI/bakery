@@ -10,34 +10,3 @@ const { src, alt } = Astro.props
 <div class="about-slide-card">
   <img class="about-slide-img" src={src} alt={alt}>
 </div>
-
-<style>
-
-  .about-slider-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #tns1 > .tns-item {
-    padding-right: 0rem !important;
-  }
-
-  .about-slide-img {
-    width: 100%;
-    opacity: 0.9;
-  }
-
-
-  /*---------- to 959px ----------*/
-
-  @media all and (max-width: 959px) {
-
-    .about-slide-img {
-      border-radius: 0.5rem;
-    }
-
-  }
-  
-
-</style>

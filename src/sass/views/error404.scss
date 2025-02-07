@@ -1,0 +1,96 @@
+@use '../includes/classes';
+@use '../includes/colors' as color;
+@use '../includes/mixins' as mx;
+@use '../includes/typography' as font;
+@use '../includes/variables' as var;
+
+
+/* Error 404 Page */
+
+.error-wrapper {
+  width: 100%;
+  min-height: 95vh;
+  @include mx.flexColCenter();
+  position: relative;
+  &::before {
+    @include mx.bgColor(-5, color.$darkBlack, 1);
+  }
+  &::after {
+    @include mx.bgHeroImg(-1, '/src/assets/images/404-bg.jpg', 0.5)
+  }
+}
+
+.error-title-div {
+  width: 50%;
+  @include mx.flexRowCenter();
+  margin-bottom: 2rem;
+  .error-title {
+    font-size: 4.5rem;
+    font-weight: 400;
+    text-align: center;
+    padding-right: 0.5rem;
+  }
+}
+
+.error-fig {
+  width: 25%;
+  @include mx.flexRowCenter();
+  img {
+    width: 100%;
+  }
+}
+
+.error-text {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.error-link {
+  font-size: 1.15rem;
+  padding: 1rem;
+  background-color: color.$secondColor;
+  border-radius: 0.5rem;
+  transition: 0.2s linear;
+  margin-top: 1.5rem;
+  a {
+    color: color.$whiteSmoke;
+  }
+  &:hover {
+    background-color: color.$thirdColor;
+  }
+}
+
+.error-title, .error-text {
+  color: color.$whiteSmoke;
+  text-shadow: 0rem 0rem 0.25rem color.$lighterBlack;
+}
+
+/*---------- to 575px ----------*/
+
+@media all and (max-width: 575px) {
+
+  /* Error 404 Page */
+
+  .error-title-div {
+    flex-direction: column;
+  }
+
+  .error-fig {
+    width: 75%;
+  }
+
+  .error-title {
+    font-size: 3rem;
+  }
+
+  .error-text {
+    font-size: 1rem;
+    padding-inline: 0.5rem;
+  }
+
+  .error-link {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+}

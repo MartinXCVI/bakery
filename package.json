@@ -1,16 +1,20 @@
 {
-  "name": "",
+  "name": "bakery",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
+    "styles": "sass ./src/sass/styles.scss ./src/css/styles.css --watch",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.11.5",
+    "astro": "^5.2.5",
     "tiny-slider": "^2.9.4"
+  },
+  "devDependencies": {
+    "sass": "^1.83.4"
   }
 }

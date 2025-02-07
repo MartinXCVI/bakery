@@ -1,0 +1,464 @@
+@use '../includes/classes';
+@use '../includes/colors' as color;
+@use '../includes/mixins' as mx;
+@use '../includes/typography' as font;
+@use '../includes/variables' as var;
+
+
+/* Landing Products */
+
+.products-landing-wrapper {
+  width: 100%;
+  min-height: 95vh;
+  @include mx.flexRowCenter();
+  position: relative;
+  &::before {
+    @include mx.bgColor(-1, color.$lighterBlack, 1);
+  }
+  &::after {
+    @include mx.bgHeroImg(-1, '/src/assets/images/products-1.jpg', 0.5);
+  }
+}
+
+.products-landing-section {
+  text-align: center;
+  .products-title {
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 0.35rem;
+    margin-bottom: 2rem;
+    color: color.$white;
+  }
+  .products-subtitle {
+    font-size: 1.25rem;
+    color: color.$white;
+  }
+}
+
+.products-title, .products-subtitle {
+  text-shadow: 0rem 0rem 1rem #202020;
+}
+
+/* Bread Section */
+
+.bread-section-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  @include mx.flexColCenter();
+}
+
+.bread-article-intro {
+  width: 50%;
+  min-height: 75vh;
+  @include mx.flexColCenter();
+  gap: 2rem;
+  padding-block: 3rem;
+  text-align: center;
+  p {
+    margin-bottom: 0rem;
+  }
+}
+
+.bread-subtitle {
+  font-size: 3rem;
+  font-weight: 200;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+}
+
+.bread-text, .bread-intro {
+  color: color.$lighterBlack;
+  font-size: 0.9rem;
+  margin-bottom: 0rem;
+}
+
+.product-fig {
+  width: 15%;
+  @include mx.flexRowCenter();
+  img {
+    width: 100%;
+  }
+}
+
+.bread-article-gallery {
+  width: 100%;
+  @include mx.flexRowCenter();
+  flex-wrap: wrap;
+}
+
+.bread-gallery-fig {
+  width: 33.3%;
+  @include mx.flexRowCenter();
+  img {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    opacity: 0.9;
+    transition: 0.2s linear all;
+    &:hover {
+      transform: scale(1.2);
+      z-index: 5;
+      border-radius: 0.5rem;
+      opacity: 1;
+    }
+  }
+}
+
+/* Pastries Section */
+
+.pastries-section-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  @include mx.flexColCenter();
+}
+
+.pastries-article-intro {
+  width: 50%;
+  min-height: 75vh;
+  @include mx.flexColCenter();
+  gap: 2rem;
+  padding-block: 3rem;
+  text-align: center;
+  p {
+    margin-bottom: 0rem;
+  }
+}
+
+.pastries-subtitle {
+  font-size: 3rem;
+  font-weight: 200;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+}
+
+.pastries-text,
+.pastries-intro {
+  color: #252525;
+  font-size: 0.9rem;
+}
+
+.product-fig {
+  width: 15%;
+  @include mx.flexRowCenter();
+  img {
+    width: 100%;
+  }
+}
+
+.pastries-article-gallery {
+  width: 100%;
+  @include mx.flexRowCenter();
+  flex-wrap: wrap;
+}
+
+.pastries-gallery-fig {
+  width: 33.3%;
+  @include mx.flexRowCenter();
+  img {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    opacity: 0.9;
+    transition: 0.2s linear all;
+    &:hover {
+      transform: scale(1.2);
+      z-index: 5;
+      border-radius: 0.5rem;
+      opacity: 1;
+    }
+  }
+}
+
+/* Cakes Section */
+
+.cakes-section-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  @include mx.flexColCenter();
+}
+
+.cakes-article-intro {
+  width: 50%;
+  min-height: 75vh;
+  @include mx.flexColCenter();
+  gap: 2rem;
+  padding-block: 3rem;
+  text-align: center;
+  p {
+    margin-bottom: 0rem;
+  }
+}
+
+.cakes-subtitle {
+  font-size: 3rem;
+  font-weight: 200;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+}
+
+.cakes-text,
+.cakes-intro {
+  color: #252525;
+  font-size: 0.9rem;
+}
+
+.product-fig {
+  width: 15%;
+  @include mx.flexRowCenter();
+  img {
+    width: 100%;
+  }
+}
+
+.cakes-article-gallery {
+  width: 100%;
+  @include mx.flexRowCenter();
+  flex-wrap: wrap;
+}
+
+.cakes-gallery-fig {
+  width: 33.3%;
+  @include mx.flexRowCenter();
+  img {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    opacity: 0.9;
+    transition: 0.2s linear all;
+    &:hover {
+      transform: scale(1.2);
+      z-index: 5;
+      border-radius: 0.5rem;
+      opacity: 1;
+    }
+  }
+}
+
+
+/*=============== MEDIA QUERIES ===============*/
+
+/*---------- to 479px ----------*/
+
+@media all and (max-width: 479px) {
+
+  /* Landing Products */
+
+  .products-landing-section {
+    .products-title {
+      font-size: 2.5rem;
+    }
+    .products-subtitle {
+      font-size: 1rem;
+    }
+  }
+
+  /* Bread Section */
+
+  .bread-article-intro {
+    width: 80%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .bread-subtitle {
+    font-size: 2rem;
+  }
+
+  .bread-text {
+    margin-bottom: 0.75rem;
+  }
+
+  /* Pastries Section */
+
+  .pastries-article-intro {
+    width: 80%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .pastries-subtitle {
+    font-size: 2rem;
+  }
+
+  .pastries-text {
+    margin-bottom: 0.75rem;
+  }
+
+  /* Cakes Section */
+
+  .cakes-article-intro {
+    width: 80%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .cakes-subtitle {
+    font-size: 2rem;
+  }
+
+  .cakes-text {
+    margin-bottom: 0.75rem;
+  }
+
+  /* Bread, Pastries & Cakes */
+
+  .bread-article-intro, .pastries-article-intro, .cakes-article-intro {
+    gap: 1.5rem;
+  }
+}
+
+/*---------- 480 to 959px ----------*/
+
+@media all and (min-width: 480px) and (max-width: 959px) {
+
+  /* Landing Products */
+
+  .products-landing-section {
+    .products-title {
+      font-size: 2.25rem;
+    }
+    .products-subtitle {
+      font-size: 1rem;
+    }
+  }
+
+  /* Bread Section */
+
+  .bread-article-intro {
+    width: 70%;
+    min-height: 60vh;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .bread-subtitle {
+    font-size: 2.25rem;
+  }
+
+  .bread-text {
+    margin-bottom: 0.75rem;
+  }
+
+  /* Pastries Section */
+
+  .pastries-article-intro {
+    width: 70%;
+    min-height: 60vh;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .pastries-subtitle {
+    font-size: 2.25rem;
+  }
+
+  .pastries-text {
+    margin-bottom: 0.75rem;
+  }
+
+  /* Cakes Section */
+
+  .cakes-article-intro {
+    width: 70%;
+    min-height: 60vh;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .cakes-subtitle {
+    font-size: 2.25rem;
+  }
+
+  .cakes-text {
+    margin-bottom: 0.75rem;
+  }
+}
+
+/*---------- to 959px ----------*/
+
+@media all and (max-width: 959px) {
+
+  /* Bread Section */
+
+  .bread-intro {
+    margin-bottom: 1rem;
+  }
+
+  .product-fig {
+    width: 20%;
+  }
+
+  .bread-article-gallery {
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  .bread-gallery-fig {
+    width: 95%;
+  }
+
+  .bread-gallery-fig:nth-child(1) img {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+
+  .bread-gallery-fig:last-child img {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+
+  /* Pastries Section */
+
+  .pastries-intro {
+    margin-bottom: 1rem;
+  }
+
+  .product-fig {
+    width: 20%;
+  }
+
+  .pastries-article-gallery {
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  .pastries-gallery-fig {
+    width: 95%;
+    &:nth-child(1) img {
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+    }
+  
+    &:last-child img {
+      border-bottom-left-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
+    }
+  }
+
+  /* Cakes Section */
+
+  .cakes-intro {
+    margin-bottom: 1rem;
+  }
+
+  .product-fig {
+    width: 20%;
+  }
+
+  .cakes-article-gallery {
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  .cakes-gallery-fig {
+    width: 95%;
+    &:nth-child(1) img {
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+    }
+    &:last-child img {
+      border-bottom-left-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
+    }
+  }
+}

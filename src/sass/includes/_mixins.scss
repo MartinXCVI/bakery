@@ -1,0 +1,61 @@
+@mixin bgHeroImg($z, $bgImg, $opacity) {
+  content: '';
+  inset: 0;
+  position: absolute;
+  z-index: $z;
+  background-image: url($bgImg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: $opacity;
+}
+
+@mixin bgColor($z, $bgColor, $opacity) {
+  content: '';
+  inset: 0;
+  position: absolute;
+  z-index: $z;
+  background: $bgColor;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: $opacity;
+}
+
+@mixin flexRow($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin flexRowCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexCol($justify, $align) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin flexColCenter() {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin colorize($bg, $color) {
+  background-color: $bg;
+  color: $color;
+}
+
+@mixin btnStyle($bg, $color, $bdC, $bdR) {
+  background-color: $bg;
+  color: $color;
+  border: 1px solid $bdC;
+  border-radius: $bdR;
+}

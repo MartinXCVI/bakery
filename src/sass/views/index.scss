@@ -1,0 +1,344 @@
+@use '../includes/classes';
+@use '../includes/colors' as color;
+@use '../includes/mixins' as mx;
+@use '../includes/typography' as font;
+@use '../includes/variables' as var;
+
+
+/* Index Landing */
+
+.landing-section {
+  width: 100;
+  min-height: 95vh;
+  @include mx.flexColCenter();
+  position: relative;
+  color: color.$whiteSmoke;
+  &::before {
+    @include mx.bgColor(-10, color.$lighterBlack, 1);
+  }
+  &::after {
+    @include mx.bgHeroImg(-5, '/src/assets/images/index-bg.jpg', 0.5);
+  }
+}
+
+.main-title {
+  margin-bottom: 2rem;
+  font-size: 5rem;
+  font-family: font.$elegantText;
+}
+
+.main-subtitle {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.main-title, .main-subtitle {
+  text-shadow: 0rem 0rem 0.5rem color.$lighterBlack;
+}
+
+/* Index Carousel */
+
+.index-carousel-section {
+  @include mx.flexColCenter();
+}
+
+.action-section {
+  width: 75%;
+  min-height: 100vh;
+  @include mx.flexColCenter();
+  color: color.$lighterBlack;
+  gap: 1rem;
+  .action-subtitle {
+    font-family: font.$elegantText;
+    font-size: 3rem;
+  }
+}
+
+.action-message-section {
+  @include mx.flexColCenter();
+  p {
+    width: 75%;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    line-height: 2rem;
+  }
+}
+
+.action-message-btn {
+  padding: 1rem 2rem;
+  background-color: color.$firstColor;
+  color: color.$whiteSmoke;
+  border-radius: 0.25rem;
+  transition: 0.2s linear all;
+  &:hover {
+    background-color: color.$secondColor;
+  }
+}
+
+#index-carousel-container {
+  width: 100%;
+}
+
+.index-slider {
+  width: 100%;
+  display: block;
+}
+
+.index-slide-card {
+  .index-slide-img {
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+}
+
+/* Index Products */
+
+.index-products-wrapper {
+  min-height: 100vh;
+  @include mx.flexColCenter();
+}
+
+.index-products-title {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 0.5rem;
+  margin-bottom: 5rem;
+}
+
+.index-products-section {
+  @include mx.flexRow(var.$evenly, center);
+}
+
+.index-product-art {
+  width: 25%;
+  @include mx.flexColCenter();
+  gap: 1.25rem;
+  .index-products-subtitle {
+    font-size: 1.25rem;
+    font-weight: 300;
+    letter-spacing: 0.25rem;
+  }
+  .products-text {
+    font-size: 0.9rem;
+    font-weight: 300;
+  }
+  .products-link {
+    color: color.$secondColor;
+    transition: 0.2s linear all;
+    &:hover {
+      color: color.$thirdColor;
+    }
+    &:focus {
+      color: color.$thirdColor;
+    }
+  }
+  p {
+    line-height: 1.75rem;
+  }
+  figure {
+    width: 15%;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.index-products-subtitle, .products-text {
+  text-align: center;
+}
+
+/* Services section */
+
+.services-section {
+  width: 100%;
+  min-height: 100vh;
+  @include mx.flexRow(flex-start, center);
+  position: relative;
+  &::before {
+    @include mx.bgColor(-5, color.$softBlack, 0.9);
+  }
+  &::after {
+    @include mx.bgHeroImg(-1, '/src/assets/images/services-index.jpg', 0.5);
+    background-attachment: fixed;
+  }
+}
+
+.services-section-div {
+  width: 35%;
+  @include mx.flexCol(center, flex-start);
+  padding-left: 5rem;
+  color: color.$white;
+  h3 {
+    font-family: font.$elegantText;
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
+  }
+  p {
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+    color: color.$whiteSmoke;
+  }
+}
+
+.services-section-div h3:nth-child(3) {
+  margin-bottom: 1.5rem;
+}
+
+.services-section-div h3, .services-section-div p {
+  text-shadow: 0rem 0rem 0.35rem color.$lighterBlack;
+}
+
+.index-services-btn {
+  width: 65%;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  background-color: color.$lighterBlack;
+  color: color.$whiteSmoke;
+  text-align: center;
+  transition: 0.2s linear all;
+  &:hover {
+    cursor: pointer;
+    background-color: #f6f6f6;
+    color: color.$lighterBlack;
+  }
+}
+
+/* Index Map */
+
+#index-map {
+  width: 100%;
+  min-height: 65vh;
+}
+
+
+/*=============== MEDIA QUERIES ===============*/
+
+/*----------- to 479px ----------*/
+
+@media all and (max-width: 479px) {
+
+  /* Index Landing */
+
+  .main-title {
+    font-size: 3rem;
+  }
+
+  .main-subtitle {
+    font-size: 1.45rem;
+  }
+
+  .action-subtitle {
+    font-size: 2.25rem;
+  }
+
+  /* Index Products (to 479px)*/
+
+  .index-products-title {
+    font-size: 1.85rem;
+  }
+
+  .index-product-art {
+    width: 80%;
+  }
+
+  /* Services section */
+
+  .services-section {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .services-section-div {
+    width: 100%;
+    p {
+      line-height: 2.5rem;
+    }
+  }
+}
+
+/*----------- 480 to 576px ----------*/
+
+@media all and (min-width: 480px) and (max-width: 575px) {
+
+  /* Index Landing */
+
+  .main-title {
+    font-size: 3.5rem;
+  }
+
+  .main-subtitle {
+    font-size: 2rem;
+  }
+}
+
+/*----------- 480 to 767px ----------*/
+
+@media all and (min-width: 480px) and (max-width: 575px) {
+
+  /* Services section */
+
+  .services-section-div {
+    width: 65%;
+  }
+
+  .services-section-div p {
+    line-height: 2rem;
+  }
+
+  .index-services-btn {
+    width: 75%;
+  }
+}
+
+/*---------- to 767px ----------*/
+
+@media all and (max-width: 767px) {
+
+  /* Index Carousel */
+
+  .index-carousel-section {
+    margin-bottom: 2rem;
+  }
+
+  /* Index Products */  
+
+  .index-products-title {
+    margin-bottom: 2rem;
+  }
+
+  .index-products-section {
+    flex-direction: column;
+  }
+
+  .index-product-art {
+    width: 60%;
+    margin-bottom: 4rem;
+  }
+
+  /* Services section */
+
+  .services-section-div {
+    padding-left: 2rem;
+  }
+
+  /* Index Map */
+
+  #index-map {
+    max-height: 45vh;
+  }
+}
+
+/*---------- 768px to 959px -----------*/
+
+@media all and (min-width: 768px) and (max-width: 959px) {
+
+  /* Services section */
+
+  .services-section-div {
+    width: 50%;
+    p {
+      line-height: 2rem;
+    }
+  }
+}

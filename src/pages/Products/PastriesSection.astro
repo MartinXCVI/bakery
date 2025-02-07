@@ -6,7 +6,7 @@
   <article class="pastries-article-intro">
     <p class="pastries-intro">Pastries & Delicacies</p>
     <figure class="product-fig">
-      <img src="/icons/product-pastries.png" alt="" />
+      <img src="/src/assets/icons/product-pastries.png" alt="" />
     </figure>
     <h2 class="pastries-subtitle">The best pastries, with all of our love</h2>
     <p class="pastries-text">
@@ -21,176 +21,22 @@
   </article>
   <article class="pastries-article-gallery">
     <figure class="pastries-gallery-fig">
-      <img src="/images/products/pastries/pastries-1.jpg" alt="" />
+      <img src="/src/assets/images/products/pastries/pastries-1.jpg" alt="" />
     </figure>
     <figure class="pastries-gallery-fig">
-      <img src="/images/products/pastries/pastries-2.jpg" alt="" />
+      <img src="/src/assets/images/products/pastries/pastries-2.jpg" alt="" />
     </figure>
     <figure class="pastries-gallery-fig">
-      <img src="/images/products/pastries/pastries-3.jpg" alt="" />
+      <img src="/src/assets/images/products/pastries/pastries-3.jpg" alt="" />
     </figure>
     <figure class="pastries-gallery-fig">
-      <img src="/images/products/pastries/pastries-4.jpg" alt="" />
+      <img src="/src/assets/images/products/pastries/pastries-4.jpg" alt="" />
     </figure>
     <figure class="pastries-gallery-fig">
-      <img src="/images/products/pastries/pastries-5.jpg" alt="" />
+      <img src="/src/assets/images/products/pastries/pastries-5.jpg" alt="" />
     </figure>
     <figure class="pastries-gallery-fig">
-      <img src="/images/products/pastries/pastries-6.jpg" alt="" />
+      <img src="/src/assets/images/products/pastries/pastries-6.jpg" alt="" />
     </figure>
   </article>
 </section>
-
-<style>
-  .pastries-section-wrapper {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .pastries-article-intro {
-    width: 50%;
-    min-height: 75vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-  }
-
-  .pastries-subtitle {
-    font-size: 3rem;
-    font-weight: 200;
-    letter-spacing: 0.25rem;
-    text-transform: uppercase;
-  }
-
-  .pastries-text,
-  .pastries-intro {
-    color: #252525;
-    font-size: 0.9rem;
-  }
-
-  .product-fig {
-    width: 15%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .product-fig img {
-    width: 100%;
-  }
-
-  .pastries-article-gallery {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .pastries-gallery-fig {
-    width: 33.3%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .pastries-gallery-fig img {
-    width: 100%;
-    aspect-ratio: 3 / 2;
-    object-fit: cover;
-    opacity: 0.9;
-    transition: 0.2s linear all;
-  }
-
-  .pastries-gallery-fig img:hover {
-    transform: scale(1.2);
-    z-index: 5;
-    border-radius: 0.5rem;
-    opacity: 1;
-  }
-
-  /*---------- to 479px ----------*/
-
-  @media all and (max-width: 479px) {
-    .pastries-article-intro {
-      width: 80%;
-      padding-top: 1.5rem;
-      padding-bottom: 1.5rem;
-    }
-
-    .pastries-subtitle {
-      font-size: 2rem;
-      padding-top: 0.75rem;
-      padding-bottom: 0.75rem;
-    }
-
-    .pastries-text {
-      margin-bottom: 0.75rem;
-    }
-  }
-
-  /*---------- to 959px ----------*/
-
-  @media all and (min-width: 480px) and (max-width: 959px) {
-    .pastries-article-intro {
-      width: 70%;
-      min-height: 60vh;
-      justify-content: center;
-      padding-top: 1.5rem;
-      padding-bottom: 1.5rem;
-    }
-
-    .pastries-subtitle {
-      font-size: 2.25rem;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-    }
-
-    .pastries-text {
-      margin-bottom: 0.75rem;
-    }
-  }
-
-  @media all and (max-width: 959px) {
-    .pastries-intro {
-      margin-bottom: 1rem;
-    }
-
-    .product-fig {
-      width: 20%;
-    }
-
-    .pastries-article-gallery {
-      flex-direction: column;
-      margin-bottom: 2rem;
-    }
-
-    .pastries-gallery-fig {
-      width: 95%;
-    }
-
-    .pastries-gallery-fig:nth-child(1) img {
-      border-top-left-radius: 0.5rem;
-      border-top-right-radius: 0.5rem;
-    }
-
-    .pastries-gallery-fig:last-child img {
-      border-bottom-left-radius: 0.5rem;
-      border-bottom-right-radius: 0.5rem;
-    }
-  }
-
-  /*---------- from 960px ----------*/
-
-  @media all and (min-width: 960px) {
-    .pastries-article-intro {
-      margin-bottom: 1.25rem;
-    }
-  }
-</style>

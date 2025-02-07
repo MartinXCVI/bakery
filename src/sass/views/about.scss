@@ -1,0 +1,147 @@
+@use '../includes/classes';
+@use '../includes/colors' as color;
+@use '../includes/mixins' as mx;
+@use '../includes/typography' as font;
+@use '../includes/variables' as var;
+
+
+/* Us Section */
+
+.about-section {
+  width: 100%;
+  display: flex;
+}
+
+.inter-about-section {
+  flex-direction: row-reverse;
+}
+
+.about-section-figure {
+  min-width: 50%;
+  max-width: 50%;
+  @include mx.flexRow(center, center);
+  img {
+    width: 100%;
+    opacity: 0.9;
+  }
+}
+
+.about-article-section {
+  @include mx.flexRow(center, center);
+}
+
+.about-article {
+  width: 85%;
+  @include mx.flexCol(center, left);
+  padding: 1rem;
+  h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
+    margin-bottom: 2rem;
+    color: color.$lighterBlack;
+  }
+  p {
+    margin-bottom: 1.5rem;
+    line-height: 1.5rem;
+    color: color.$lighterBlack;
+  }
+}
+
+/* About Carousel */
+
+.index-carousel-section {
+  @include mx.flexColCenter();
+}
+
+.about-slider {
+  width: 100%;
+  @include mx.flexRowCenter();
+}
+
+/* About Carousel Card */
+
+.about-slide-card {
+  @include mx.flexRowCenter();
+  .about-slide-img {
+    width: 100%;
+    opacity: 0.9;
+  }
+}
+
+
+/*=============== MEDIA QUERIES ===============*/
+
+/*---------- to 479px ----------*/
+
+@media all and (max-width: 479px) {
+    
+  /* Us Section */
+
+  .about-section-figure {
+    min-width: 85%;
+    margin-bottom: 1rem;
+  }
+
+  .about-article {
+    width: 90%;
+    padding: 0.5rem;
+    p {
+      margin-bottom: 1.25rem;
+    }
+  }
+}
+
+/*---------- 480px to 767px ----------*/
+
+@media all and (min-width: 480px) and (max-width: 767px) {
+
+  /* Us Section */
+
+  .about-section-figure {
+    min-width: 65%;
+  }
+
+}
+
+/*---------- to 959px ----------*/
+
+@media all and (min-width: 768px) and (max-width: 959px) {
+
+  /* Us Section */
+
+  .about-section-figure {
+    min-width: 70%;
+  }
+
+  /* About Carousel Card */
+
+  .about-slide-img {
+    border-radius: 0.5rem;
+  }
+}
+
+/*---------- to 959px ----------*/
+
+@media all and (max-width: 959px) {
+
+  /* Us Section */
+
+  .about-section {
+    @include mx.flexColCenter();
+    padding-top: 3rem;
+  }
+
+  .about-section-figure {
+    img {
+      border-radius: 0.5rem;
+    }
+  }
+
+  .about-article {
+    h2 {
+      text-align: center;
+      font-weight: 500;
+    }
+  }
+}

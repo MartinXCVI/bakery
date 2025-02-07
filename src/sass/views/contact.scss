@@ -1,0 +1,240 @@
+@use '../includes/classes';
+@use '../includes/colors' as color;
+@use '../includes/mixins' as mx;
+@use '../includes/typography' as font;
+@use '../includes/variables' as var;
+
+
+/* Contact Form */
+
+.contact-form-section {
+  width: 100%;
+  min-height: 50vh;
+  @include mx.flexRowCenter();
+  padding: 4rem 0rem 1rem;
+}
+
+#contact-form {
+  min-width: 35%;
+  @include mx.flexColCenter();
+  fieldset {
+    width: 100%;
+    @include mx.flexColCenter();
+    legend {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+#contact-form fieldset legend h3 {
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.form-text {
+  color: color.$lighterBlack;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+#contact-form fieldset legend,
+#contact-form fieldset p {
+  text-align: center;
+}
+
+.contact-inputs-wrapper {
+  width: 100%;
+  @include mx.flexColCenter();
+}
+
+.contact-sections {
+  width: 100%;
+  @include mx.flexCol(center, flex-start);
+  margin-bottom: 0.5rem;
+  label {
+    color: color.$lighterBlack;
+    font-size: 0.9rem;
+    padding-left: 4px;
+  }
+}
+
+.contact-sections label,
+.contact-sections input,
+.contact-sections textarea {
+  width: 100%;
+  margin-bottom: 0.25rem;
+}
+
+.contact-sections {
+  input {
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    border: 1px solid color.$softGrey;
+    background-color: color.$whiteSmoke;
+    color: color.$lighterBlack;
+    &:focus {
+      border-color: color.$grey;
+    }
+  }
+  textarea {
+    resize: none;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid color.$softGrey;
+    background-color: color.$whiteSmoke;
+    color: color.$lighterBlack;
+    &:focus {
+      border-color: color.$grey;
+    }
+  }
+}
+
+.contact-btns-section {
+  width: 100%;
+  @include mx.flexRow(var.$evenly, center);
+    .contact-btn {
+    width: 40%;
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    color: color.$whiteSmoke;
+    text-shadow: 0rem 0rem 0.5rem color.$lighterBlack;
+    font-size: 1rem;
+    transition: 0.2s linear all;
+  }
+}
+
+.send-btn {
+  background-color: color.$firstColor;
+  &:hover {
+    background-color: color.$thirdColor;
+  }
+}
+
+.reset-btn {
+  background-color: slategrey;
+  &:hover {
+    background-color: darkslategray;
+  }
+}
+
+/* Contact Info */
+
+.contact-info-section {
+  width: 100%;
+  @include mx.flexRow(var.$evenly, center);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.contact-item {
+  @include mx.flexRow(var.$around, top);
+}
+
+.contact-info {
+  h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #353535;
+  }
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+}
+
+.contact-info a, .contact-info p {
+  color: #252525;
+}
+
+.contact-icon {
+  @include mx.flexRowCenter();
+  border-radius: 4rem;
+  margin-top: 0.25rem;
+  margin-right: 0.5rem;
+  .fa-icon {
+    position: relative;
+    padding: 0.75rem;
+    font-size: 1rem;
+    &::after {
+      border-radius: 3rem;
+      @include mx.bgColor(-1, color.$firstColor, 1);
+    }
+  }
+}
+
+
+/*=============== MEDIA QUERIES ===============*/
+
+/*--------- to 479px ----------*/
+
+@media all and (max-width: 479px) {
+
+  /* Contact Form */
+
+  #contact-form {
+    width: 90%;
+  }
+
+  .contact-btns-section {
+    flex-direction: column;
+    padding-top: 1rem;
+    .contact-btn {
+      width: 100%;
+    }
+  }
+
+  .contact-btn:first-child {
+    margin-bottom: 0.75rem;
+  }
+
+  /* Contact Info */
+
+  .contact-item {
+    width: 65%;
+  }
+}
+
+/*---------- 480px to 767px ----------*/
+
+@media all and (min-width: 480px) and (max-width: 767px) {
+
+  /* Contact Info */
+
+  .contact-item {
+    width: 50%;
+  }
+}
+
+/*---------- 768px to 960px ----------*/
+
+@media all and (min-width: 768px) and (max-width: 959px) {
+
+  /* Contact Info */
+
+  .contact-item {
+    width: 35%;
+  }
+}
+
+/*---------- to 959px ----------*/
+
+@media all and (max-width: 959px) {
+
+  /* Contact Info */
+
+  .contact-info-section {
+    flex-direction: column;
+  }
+
+  .contact-item {
+    justify-content: left;
+    margin-bottom: 1.5rem;
+  }
+}
