@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "styles": "sass ./src/sass/styles.scss ./src/css/styles.css --watch",
+    "styles": "sass ./src/sass/styles.scss ./public/css/styles.css --watch",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"

@@ -16,7 +16,7 @@
     @include mx.bgColor(-1, color.$lighterBlack, 1);
   }
   &::after {
-    @include mx.bgHeroImg(-1, '/src/assets/images/products-1.jpg', 0.5);
+    @include mx.bgHeroImg(-1, '/assets/images/products-1.jpg', 0.5);
   }
 }
 

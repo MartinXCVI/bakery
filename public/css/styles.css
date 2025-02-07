@@ -374,7 +374,7 @@ button {
   inset: 0;
   position: absolute;
   z-index: -5;
-  background-image: url("/src/assets/images/index-bg.jpg");
+  background-image: url("/assets/images/index-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -545,7 +545,7 @@ button {
   inset: 0;
   position: absolute;
   z-index: -1;
-  background-image: url("/src/assets/images/services-index.jpg");
+  background-image: url("/assets/images/services-index.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -846,7 +846,7 @@ button {
   inset: 0;
   position: absolute;
   z-index: -1;
-  background-image: url("/src/assets/images/products-1.jpg");
+  background-image: url("/assets/images/products-1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1294,7 +1294,7 @@ button {
   inset: 0;
   position: absolute;
   z-index: -1;
-  background-image: url("/src/assets/images/services-1.jpg");
+  background-image: url("/assets/images/services-1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1902,7 +1902,7 @@ button {
   inset: 0;
   position: absolute;
   z-index: -1;
-  background-image: url("/src/assets/images/404-bg.jpg");
+  background-image: url("/assets/images/404-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
