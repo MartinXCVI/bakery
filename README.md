@@ -1,10 +1,10 @@
 # Bakery
 
-![Bakery cover screenshot](./src/assets/images/bakery-cover.png 'Bakery in desktop version')
+![Bakery cover screenshot](./public/assets/images/bakery-cover.png 'Bakery in desktop version')
 
 ## 📄 Introduction
 
-Delicate and beautiful website for a bakery. Comfortable and eye-catching design structured with 6 pages: *Home*, *About*, *Products*, *Services*, *Contact*, and *Error* page. Use of libraries like **Tiny Slider** for engaging sliders, and **Leaflet** for geolocalization. Contact form functionality with **Web3Forms**.
+Delicate and beautiful website template for a bakery. Comfortable and eye-catching design structured with 6 pages: *Home*, *About*, *Products*, *Services*, *Contact*, and *Error* page. Use of libraries like **Tiny Slider** for engaging sliders, and **Leaflet** for geolocalization. Contact form functionality with **Web3Forms**.
 
 ### Developed with:
 
@@ -21,8 +21,8 @@ Delicate and beautiful website for a bakery. Comfortable and eye-catching design
 
 Copy the command below with the link:
 
-```
-git clone https://github.com/MartinXCVI/bakery
+```bash
+git clone https://github.com/MartinXCVI/bakery.git
 ```
 
 ### Live in Vercel
@@ -50,6 +50,14 @@ All commands are run from the root of the project, from a terminal:
 - [Tiny Slider repository](https://github.com/ganlanyuan/tiny-slider)
 - [Leaflet official documentation](https://leafletjs.com/)
 - [Web3Forms official documentation](https://web3forms.com/)
+
+---
+
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
 
 ## 🧑‍💻 Developer
 
