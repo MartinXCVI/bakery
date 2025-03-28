@@ -17,7 +17,7 @@
     @include mx.bgColor(-10, color.$lighterBlack, 1);
   }
   &::after {
-    @include mx.bgHeroImg(-5, '../assets/images/index-bg.jpg', 0.5);
+    @include mx.bgHeroImg(-5, '/images/index-bg.jpg', 0.5);
   }
 }
 
@@ -160,7 +160,7 @@
     @include mx.bgColor(-5, color.$softBlack, 0.9);
   }
   &::after {
-    @include mx.bgHeroImg(-1, '../assets/images/services-index.jpg', 0.5);
+    @include mx.bgHeroImg(-1, '/images/services-index.jpg', 0.5);
     background-attachment: fixed;
   }
 }
