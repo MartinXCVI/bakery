@@ -32,7 +32,8 @@
       color: #353535;
     }
     a, p {
-      color: color.$lighterBlack
+      color: color.$lighterBlack;
+      font-size: 0.9rem;
     }
   }
 }

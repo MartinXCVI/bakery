@@ -149,8 +149,11 @@
   }
 }
 
-.contact-info a, .contact-info p {
-  color: #252525;
+.contact-info {
+  a, p {
+    color: #252525;
+    font-size: 0.9rem;
+  }
 }
 
 .contact-icon {

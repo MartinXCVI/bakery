@@ -1,0 +1,127 @@
+---
+const ACCESS_KEY: string = import.meta.env.WEB3_FORMS_API_KEY
+
+if(!ACCESS_KEY) console.error(`Missing environment variable: ${ACCESS_KEY}`)
+---
+
+<section class="contact-form-section">
+  <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+    <fieldset>
+      <legend><h3>Contact us</h3></legend>
+      <p class="form-text">
+        Leave us your query or message. We will contact you soon.
+      </p>
+      <section class="contact-inputs-wrapper">
+        <input type="hidden" name="access_key" value={ACCESS_KEY}>
+        <input type="hidden" name="from_name" value="Bakery website">
+        <input type="checkbox" name="botcheck" id="" style="display: none;">
+        <section class="contact-sections">
+          <label for="name-input"><i class="fa-regular fa-user"></i> Full Name</label
+          >
+          <input
+            type="text"
+            name="name"
+            id="name-input"
+            placeholder="Your name"
+            minlength="6" 
+            maxlength="70"
+            aria-label="Name"
+            required
+          />
+        </section>
+        <section class="contact-sections">
+          <label for="email-input"
+            ><i class="fa-regular fa-envelope"></i> Email</label
+          >
+          <input
+            type="email"
+            name="email"
+            id="email-input"
+            placeholder="Your email"
+            maxlength="120"
+            aria-label="Email"
+            required
+          />
+        </section>
+        <section class="contact-sections">
+          <label for="phone-input"
+            ><i class="fa-solid fa-mobile-screen"></i> Phone</label
+          >
+          <input
+            type="tel"
+            name="email"
+            id="phone-input"
+            placeholder="Your phone"
+            min="6"
+            max="10"
+            aria-label="Phone"
+            required
+          />
+        </section>
+        <section class="contact-sections">
+          <label for="city-input"
+            ><i class="fa-regular fa-building"></i> City</label
+          >
+          <input
+            type="text"
+            name="city"
+            id="city-input"
+            placeholder="Your city"
+            maxlength="100"
+            aria-label="City"
+            required
+          />
+        </section>
+        <section class="contact-sections">
+          <label for="subject-input">
+            <i class="fa-regular fa-pen-to-square"></i> Subject
+          </label>
+          <input
+            type="text"
+            name="subject"
+            id="subject-input"
+            placeholder="Your subject"
+            minlength="6"
+            maxlength="100"
+            aria-label="Subject"
+            required
+          />
+        </section>
+        <section class="contact-sections">
+          <label for="message-input"
+            ><i class="fa-regular fa-message"></i> Message</label
+          >
+          <textarea
+            name="message"
+            id="message-input"
+            rows="10"
+            placeholder="Your message"
+            minlength="10"
+            maxlength="500"
+            aria-label="Message"
+            required
+          >
+        </textarea>
+        </section>
+      </section>
+    </fieldset>
+    <section class="contact-btns-section">
+      <button
+        type="submit"
+        class="contact-btn send-btn"
+        title="Send form button"
+        aria-label="Send form"
+      >
+        Send
+      </button>
+      <button
+        type="reset"
+        class="contact-btn reset-btn"
+        title="Clear form button"
+        aria-label="Clear form"
+      >
+        Reset
+      </button>
+    </section>
+  </form>
+</section>

@@ -5,16 +5,18 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "styles": "sass ./src/sass/styles.scss ./public/css/styles.css --watch",
+    "styles": "sass ./src/sass/styles.scss ./src/css/styles.css --watch",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
     "astro": "^5.2.5",
+    "leaflet": "^1.9.4",
     "tiny-slider": "^2.9.4"
   },
   "devDependencies": {
+    "@types/leaflet": "^1.9.17",
     "sass": "^1.83.4"
   }
 }

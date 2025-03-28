@@ -1,0 +1,17 @@
+---
+interface Props {
+	src: string;
+	alt: string;
+}
+
+const { src, alt } = Astro.props as Props
+---
+
+<div class="about-slide-card">
+  <img
+		class="about-slide-img"
+		src={src}
+		alt={alt}
+		title={alt}
+	>
+</div>

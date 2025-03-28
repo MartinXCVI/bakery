@@ -1,11 +1,14 @@
 ---
-import IndexLayout from '../layouts/IndexLayout.astro';
-import Header from '../components/Header.astro';
-import IndexCarousel from './Index/IndexCarousel.astro';
-import IndexProducts from './Index/IndexProducts.astro';
-import IndexServices from './Index/IndexServices.astro';
-import IndexMap from './Index/IndexMap.astro';
-import Footer from '../components/Footer.astro';
+import IndexLayout from '@layouts/IndexLayout.astro';
+import Header from '@components/Header.astro';
+import IndexCarousel from '@components/Index/IndexCarousel.astro';
+import IndexProducts from '@components/Index/IndexProducts.astro';
+import IndexServices from '@components/Index/IndexServices.astro';
+import IndexMap from '@components/Index/IndexMap.astro';
+import Footer from '@components/Footer.astro';
+
+const title: string = "Our Bakery"
+const subtitle: string = "Bread, Cakes & Delicacies"
 ---
 
 <IndexLayout title="Bakery">
@@ -13,8 +16,8 @@ import Footer from '../components/Footer.astro';
 	<main>
 		<!---- Landing ---->
 		<section class="landing-section">
-			<h1 class="main-title">Our Bakery</h1>
-			<h2 class="main-subtitle">Bread, Cakes & Delicacies</h2>
+			<h1 class="main-title">{title}</h1>
+			<h2 class="main-subtitle">{subtitle}</h2>
 		</section>
 		<IndexCarousel />
 		<IndexProducts />
@@ -22,6 +25,5 @@ import Footer from '../components/Footer.astro';
 		<IndexMap />
 	</main>
 	<Footer />
-				
 </IndexLayout>
 

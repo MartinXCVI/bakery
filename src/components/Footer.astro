@@ -1,4 +1,7 @@
 ---
+import { myData } from "@data/myData"
+
+const { name, phone, email, address, hourlies, facebook, instagram, youtube } = myData
 ---
 
 <footer class="footer">
@@ -8,8 +11,8 @@
         <i class="fa-solid fa-phone fa-icon"></i>
       </div>
       <div class="contact-info">
-        <h3>Call us</h3>
-        <a href="tel:123456789">123 - 456 - 7890</a>
+        <h3>Call Us</h3>
+        <a href="tel:123456789">{phone}</a>
       </div>
     </div>
     <div class="footer-contact-card">
@@ -18,7 +21,7 @@
       </div>
       <div class="contact-info">
         <h3>Email us</h3>
-        <a href="mailto:bakery@gmail.com">bakery@gmail.com</a>
+        <a href="mailto:bakery@gmail.com">{email}</a>
       </div>
     </div>
     <div class="footer-contact-card">
@@ -27,7 +30,7 @@
       </div>
       <div class="contact-info">
         <h3>Visit us</h3>
-        <p>Something Street 123, City Name</p>
+        <p>{address}</p>
       </div>
     </div>
     <div class="footer-contact-card">
@@ -36,24 +39,52 @@
       </div>
       <div class="contact-info">
         <h3>Hourlies</h3>
-        <p>Mon to Sat: 7 am to 9 pm</p>
+        <p>{hourlies}</p>
       </div>
     </div>
   </section>
   <section class="footer-social-section">
     <div class="footer-social-icons">
-      <a href="https://www.facebook.com/" class="social-icon-link" target="_blank">
+      <a
+        href={facebook}
+        class="social-icon-link"
+        target="_blank"
+        rel="nooppener noreferrer"
+        title={`Go to ${name}'s Facebook`}
+      >
         <i class="fa-brands fa-facebook-f"></i>
       </a>
-      <a href="https://www.instagram.com/" class="social-icon-link" target="_blank">
+      <a
+        href={instagram}
+        class="social-icon-link"
+        target="_blank"
+        rel="nooppener noreferrer"
+        title={`Go to ${name}'s Instagram`}
+      >
         <i class="fa-brands fa-instagram"></i>
       </a>
-      <a href="https://www.youtube.com/" class="social-icon-link" target="_blank">
+      <a
+        href={youtube}
+        class="social-icon-link"
+        target="_blank"
+        rel="nooppener noreferrer"
+        title={`Go to ${name}'s YouTube`}
+      >
         <i class="fa-brands fa-youtube"></i>
       </a>
     </div>
   </section>
   <section class="footer-dev-section">
-    <p class="dev-signature">Developed by <a href="https://github.com/MartinXCVI/" target="_blank">MartinXCVI<i class="fa-brands fa-github"></i></a></p>
+    <p class="dev-signature">
+      Developed by 
+      <a
+        href="https://github.com/MartinXCVI/"
+        target="_blank"
+        rel="noreferrer noopener"
+        title="Go to author's GitHub profile"
+      >
+        MartinXCVI <i class="fa-brands fa-github"></i>
+      </a>
+    </p>
   </section>
 </footer>
