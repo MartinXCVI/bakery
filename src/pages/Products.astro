@@ -11,6 +11,10 @@ import Footer from "@components/Footer.astro"
 <SimpleLayout title="Bakery: Products">
   <Header />
   <main>
+    <script>
+			import { setupScrollAnimations } from "../scripts/gsapAnimations";
+			setupScrollAnimations();
+		</script>
     <LandingProducts />
     <BreadSection />
     <PastriesSection />

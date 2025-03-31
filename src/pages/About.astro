@@ -9,6 +9,10 @@ import Footer from "@components/Footer.astro";
 <AboutLayout title="Bakery: About">
   <Header />
   <main>
+    <script>
+			import { setupScrollAnimations } from "../scripts/gsapAnimations";
+			setupScrollAnimations();
+		</script>
     <UsSection />
     <AboutCarousel />
   </main>

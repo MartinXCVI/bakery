@@ -10,6 +10,10 @@ import Footer from "@components/Footer.astro"
 <ContactLayout title="Bakery: Contact">
   <Header />
     <main>
+      <script>
+        import { setupScrollAnimations } from "../scripts/gsapAnimations";
+        setupScrollAnimations();
+      </script>
       <ContactForm />
       <ContactInfo />
       <IndexMap />

@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "astro": "^5.2.5",
+    "gsap": "^3.12.7",
     "leaflet": "^1.9.4",
     "tiny-slider": "^2.9.4"
   },

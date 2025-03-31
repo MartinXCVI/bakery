@@ -6,5 +6,9 @@ import Error from "@components/404/Error.astro";
 
 <SimpleLayout title="Bakery: 404 Not Found">
   <Header />
+  <script>
+    import { setupScrollAnimations } from "../scripts/gsapAnimations";
+    setupScrollAnimations();
+  </script>
   <Error />
 </SimpleLayout>

@@ -14,6 +14,10 @@ const subtitle: string = "Bread, Cakes & Delicacies"
 <IndexLayout title="Bakery">
 	<Header />
 	<main>
+		<script>
+			import { setupScrollAnimations } from "../scripts/gsapAnimations";
+			setupScrollAnimations();
+		</script>
 		<!---- Landing ---->
 		<section class="landing-section">
 			<h1 class="main-title">{title}</h1>
