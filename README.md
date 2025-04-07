@@ -1,6 +1,6 @@
 # Bakery
 
-![Bakery cover screenshot](./public/assets/images/bakery-cover.png 'Bakery in desktop version')
+![Bakery cover screenshot](./public/images/bakery-cover.png 'Bakery in desktop version')
 
 ## 📄 Introduction
 
