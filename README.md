@@ -9,7 +9,7 @@ Delicate and beautiful website template for a bakery. Comfortable and eye-catchi
 ### Developed with:
 
 - Astro Framework
-- JavaScript
+- TypeScript
 - CSS
 - Tiny Slider
 - Leaflet
