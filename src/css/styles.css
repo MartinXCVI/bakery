@@ -368,14 +368,14 @@ button {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 1;
+  opacity: 0.9;
 }
 .landing-section::after {
   content: "";
   inset: 0;
   position: absolute;
   z-index: -5;
-  background-image: url("/images/index-bg.jpg");
+  background-image: url("/images/home/index-bg.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -548,7 +548,7 @@ button {
   inset: 0;
   position: absolute;
   z-index: -1;
-  background-image: url("/images/services-index.jpg");
+  background-image: url("/images/home/services-index.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -849,7 +849,7 @@ button {
   inset: 0;
   position: absolute;
   z-index: -1;
-  background-image: url("/images/products-1.jpg");
+  background-image: url("/images/products/products-1.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1297,7 +1297,7 @@ button {
   inset: 0;
   position: absolute;
   z-index: -1;
-  background-image: url("/images/services-1.jpg");
+  background-image: url("/images/services/services-1.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1906,7 +1906,7 @@ button {
   inset: 0;
   position: absolute;
   z-index: -1;
-  background-image: url("/images/404-bg.jpg");
+  background-image: url("/images/error/404-bg.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
