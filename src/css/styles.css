@@ -1669,7 +1669,7 @@ button {
   align-items: center;
 }
 #contact-form fieldset legend {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 #contact-form fieldset legend h3 {
@@ -1697,6 +1697,10 @@ button {
   align-items: center;
 }
 
+.contact-sections-container {
+  width: 100%;
+}
+
 .contact-sections {
   width: 100%;
   display: flex;
@@ -1709,6 +1713,10 @@ button {
   color: #252525;
   font-size: 0.9rem;
   padding-left: 4px;
+}
+
+.contact-sections.wide-section {
+  width: 100%;
 }
 
 .contact-sections label,
@@ -1878,6 +1886,22 @@ button {
   .contact-item {
     justify-content: left;
     margin-bottom: 1.5rem;
+  }
+}
+/*---------- from 960px ----------*/
+@media all and (min-width: 960px) {
+  #contact-form {
+    width: 70%;
+  }
+  .contact-sections-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+  }
+  .contact-sections {
+    width: 50%;
   }
 }
 /* Error 404 Page */

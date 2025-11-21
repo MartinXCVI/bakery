@@ -19,67 +19,76 @@ if(!ACCESS_KEY) console.error(`Missing environment variable: ${ACCESS_KEY}`)
         <input type="hidden" name="access_key" value={ACCESS_KEY}>
         <input type="hidden" name="from_name" value="Bakery website">
         <input type="checkbox" name="botcheck" id="" style="display: none;">
-        <section class="contact-sections">
-          <label for="name-input"><i class="fa-regular fa-user"></i> Full Name</label
-          >
-          <input
-            type="text"
-            name="name"
-            id="name-input"
-            placeholder="Your name"
-            minlength="6" 
-            maxlength="70"
-            aria-label="Name"
-            autocomplete="on"
-            required
-          />
-        </section>
-        <section class="contact-sections">
-          <label for="email-input"
-            ><i class="fa-regular fa-envelope"></i> Email</label
-          >
-          <input
-            type="email"
-            name="email"
-            id="email-input"
-            placeholder="Your email"
-            maxlength="120"
-            aria-label="Email"
-            autocomplete="on"
-            required
-          />
-        </section>
-        <section class="contact-sections">
-          <label for="phone-input"
-            ><i class="fa-solid fa-mobile-screen"></i> Phone</label
-          >
-          <input
-            type="tel"
-            name="email"
-            id="phone-input"
-            placeholder="Your phone"
-            min="6"
-            max="10"
-            aria-label="Phone"
-            autocomplete="on"
-            required
-          />
-        </section>
-        <section class="contact-sections">
-          <label for="city-input"
-            ><i class="fa-regular fa-building"></i> City</label
-          >
-          <input
-            type="text"
-            name="city"
-            id="city-input"
-            placeholder="Your city"
-            maxlength="100"
-            aria-label="City"
-            required
-          />
-        </section>
-        <section class="contact-sections">
+        <div class="contact-sections-container">
+          <!-- Full name -->
+          <div class="contact-sections">
+            <label for="name-input"><i class="fa-regular fa-user"></i> Full Name</label
+            >
+            <input
+              type="text"
+              name="name"
+              id="name-input"
+              placeholder="Your name"
+              minlength="6" 
+              maxlength="70"
+              aria-label="Name"
+              autocomplete="on"
+              required
+            />
+          </div>
+          <!-- Email -->
+          <div class="contact-sections">
+            <label for="email-input"
+              ><i class="fa-regular fa-envelope"></i> Email</label
+            >
+            <input
+              type="email"
+              name="email"
+              id="email-input"
+              placeholder="Your email"
+              maxlength="120"
+              aria-label="Email"
+              autocomplete="on"
+              required
+            />
+          </div>
+        </div>
+        <div class="contact-sections-container">
+          <!-- Phone -->
+          <div class="contact-sections">
+            <label for="phone-input"
+              ><i class="fa-solid fa-mobile-screen"></i> Phone</label
+            >
+            <input
+              type="tel"
+              name="email"
+              id="phone-input"
+              placeholder="Your phone"
+              min="6"
+              max="10"
+              aria-label="Phone"
+              autocomplete="on"
+              required
+            />
+          </div>
+          <!-- City -->
+          <div class="contact-sections">
+            <label for="city-input"
+              ><i class="fa-regular fa-building"></i> City</label
+            >
+            <input
+              type="text"
+              name="city"
+              id="city-input"
+              placeholder="Your city"
+              maxlength="100"
+              aria-label="City"
+              required
+            />
+          </div>
+        </div>
+        <!-- Subject -->
+        <div class="contact-sections wide-section">
           <label for="subject-input">
             <i class="fa-regular fa-pen-to-square"></i> Subject
           </label>
@@ -93,23 +102,23 @@ if(!ACCESS_KEY) console.error(`Missing environment variable: ${ACCESS_KEY}`)
             aria-label="Subject"
             required
           />
-        </section>
-        <section class="contact-sections">
+        </div>
+        <!-- Message -->
+        <div class="contact-sections wide-section">
           <label for="message-input"
             ><i class="fa-regular fa-message"></i> Message</label
           >
           <textarea
             name="message"
             id="message-input"
-            rows="10"
+            rows="7"
             placeholder="Your message"
             minlength="10"
             maxlength="500"
             aria-label="Message"
             required
-          >
-        </textarea>
-        </section>
+          ></textarea>
+        </div>
       </section>
     </fieldset>
     <section class="contact-btns-section">

@@ -21,7 +21,7 @@
     width: 100%;
     @include mx.flexColCenter();
     legend {
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
     }
   }
 }
@@ -48,6 +48,10 @@
   @include mx.flexColCenter();
 }
 
+.contact-sections-container {
+  width: 100%;
+}
+
 .contact-sections {
   width: 100%;
   @include mx.flexCol(center, flex-start);
@@ -57,6 +61,10 @@
     font-size: 0.9rem;
     padding-left: 4px;
   }
+}
+
+.contact-sections.wide-section {
+  width: 100%;
 }
 
 .contact-sections label,
@@ -239,5 +247,24 @@
   .contact-item {
     justify-content: left;
     margin-bottom: 1.5rem;
+  }
+}
+
+/*---------- from 960px ----------*/
+
+@media all and (min-width: 960px) {
+
+  #contact-form {
+    width: 70%;
+  }
+
+  .contact-sections-container {
+    width: 100%;
+    @include mx.flexRow(flex-start, center);
+    gap: 1rem;
+  }
+
+  .contact-sections {
+    width: 50%;
   }
 }
