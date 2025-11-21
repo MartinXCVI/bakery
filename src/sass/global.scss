@@ -18,6 +18,15 @@
   }
 }
 
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.75s;
+}
+
 html {
   scroll-behavior: smooth;
   background: #f6f6f6;
