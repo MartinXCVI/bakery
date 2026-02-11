@@ -1,19 +1,15 @@
 ---
+import { Leaflet, Marker, Popup, OpenPopup } from "astro-leaflet";
+
 ---
 
-<section id="index-map">
-</section>
-
-<style>
-
-  /*---------- to 767px -----------*/
-
-  @media all and (max-width: 767px) {
-
-    #index-map {
-      max-height: 45vh;
-    }
-
-  }
-
-</style>
+<Leaflet id="index-map" options={{
+  tileByName: 'OSM',
+  center: [-31.42658, -64.18461],
+  zoom: 14,
+}}>
+  <Marker latlng={[-31.42658, -64.18461]}>
+    <Popup content="Bakery"/>
+    <OpenPopup />
+  </Marker>
+</Leaflet>
