@@ -12,8 +12,8 @@
   },
   "dependencies": {
     "astro": "^5.16.0",
+    "astro-leaflet": "^1.10.0",
     "gsap": "^3.12.7",
-    "leaflet": "^1.9.4",
     "tiny-slider": "^2.9.4"
   },
   "devDependencies": {
